@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="med.png">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+
+    <title>Heartbeat</title>
+</head>
+<body style="margin: 0;">
+    <div style="background-color: red; height: 40px; padding: 20px;">
+        <img style="float: left; position: relative; top: -15px;" src="med.png" height="70px">
+        <h3 style="font-size: 43px; position: relative; top: -45px; left: 10px; ">Heartbeat</h3>
+    </div>
+    <center>
+        <div style="padding: 10px; position: relative; top: 15px;">
+            <div id="map" style="width: 95%; height: 260px; border-radius: 5px;"></div>
+        </div>
+        <div style="background-color: rgb(195, 195, 195); color:black; border-radius: 5px; width: 80%; font-size: 30px; position: relative; top: -10px;">
+            <p id="locating">locating...</p>
+            <p id="street"></p>
+            <p id="town"></p>
+        </div>
+
+    <div style="color: white; background-color: red; width: 50%; position: relative; left: 10px; border-radius: 5px;">
+        <h1 style="position: relative; left: 5px;">First Aid</h1>
+    </div>
+    </center>
+        <div style="color: white; background-color: rgb(141, 141, 141); width: 50%; border-radius: 5px; position: relative; left: 10px;">
+            <h2 style="position: relative; left: 5px;">If unconscious</h2>
+        </div>
+        <img src="checkbreathing.jpg" width="330px">
+        <ul>
+            <li>Tilt the head back, Push the chin forward</li>
+            <li>Place ear over mouth, Look at chest</li>
+            <li>Listen for sound, See chest rise and fall</li>
+        </ul>
+
+        <div style="color: white; background-color: rgb(141, 141, 141); width: 50%; border-radius: 5px; position: relative; left: 10px;">
+            <h2 style="position: relative; left: 5px;">If breathing</h2>
+        </div>
+        <img src="stable3.jpg" width="350px" style="position: relative; left: 20px;">
+        <ul>
+            <li>Lay arm at 90° angle, palm facing up</li>
+            <li>Lay other arm over chest, against the cheek</li>
+            <li>Grab the thigh, bend the leg</li>
+            <li>Pull patient towards you, Align thigh at 90° angle to hip</li>
+            <li>Align hand to Overextend neck</li>
+        </ul>
+
+        <div style="color: white; background-color: rgb(141, 141, 141); width: 50%; border-radius: 5px; position: relative; left: 10px;">
+            <h2 style="position: relative; left: 5px;">If not breathing</h2>
+        </div>
+        <img src="cpr1.jpg" width="330px" style="position: relative; left: 20px;">
+        <ul>
+            <li>Overextend neck, Pinch nose shut</li>
+            <li>Seal the mouth with yours</li>
+            <li>Deliver first breath</li>
+            <li>Take a deep breath</li>
+            <li>Deliver second breath</li>
+        </ul>
+        <img src="cpr2.jpg" width="330px" style="position: relative; left: 20px; border-radius: 10px;">
+        <ul>
+            <li>Locate the lower edge of rib cage</li>
+            <li>Place the tip of middle finger in notch </li>
+                and against the bottom of the sternum.
+            <li>Place index finger next to middle finger</li>
+            <li>Place heel of hand next to middle </li>
+        </ul>
+        <img src="cpr3.jpg" width="330px" style="position: relative; left: 20px; border-radius: 10px;">
+        <ul>
+            <li>Interlock your hands and push down hard (4 to 5cm)</li>
+            <li>Realease pressure completely</li>
+            <li>Continue cylce in a 100-120 bpm rythmen</li>
+            Think of "Ah Ah Ah" from "Stayin' Alive"
+            <li>Stop Cylce after 30 repetitions and deliver breaths</li>
+        </ul>
+      
+
+</body>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+crossorigin=""></script>
+<script src="index.js"></script>
+</html>
