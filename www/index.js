@@ -47,14 +47,14 @@ async function main(){
                 onAdd: function(map) {
                     
                 var text = L.DomUtil.create('div');
-                text.style = "position: relative; top:26.8px; right:9.7px"
+                text.style = "position: relative; top:-26.8px; right:-9.7px"
                 text.id = "info_text";
                 text.innerHTML = "<p style='background-color: white; color:blue; opacity: 0.8; font-size:16px'>"+lat+ " "+ lon+ "</p></div>"
                 return text;
                 },
             });
             L.control.textbox = function(opts) { return new L.Control.textbox(opts);}
-            L.control.textbox({ position: 'bottomleft' }).addTo(map);
+            L.control.textbox({ position: 'topright' }).addTo(map);
             getaddr(data)
             
             
