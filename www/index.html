@@ -18,16 +18,21 @@
     table, th, td {
       border:3px solid black; font-size: 25px; text-align: center;
     }
+    p{
+        font-size: 25px;
+        text-align: center;
+        font-weight: bold;
+    }
 </style>  
 <body style="margin: 0;">
     <div style="background-color: red; height: 40px; padding: 20px;">
-        <img style="float: left; position: relative; top: -15px;" src="med.png" height="70px">
+        <img style="float: left; position: relative; top: -15px;" src="appleicon.png" height="70px">
         <p style="font-size: 50px; position: relative; top: -63px; left: 10px; font-weight: bold;">Heartbeat</p>
     </div>
     <center>
 
-        <div style="padding: 8px;" >
-            <div id="map" style="width: 95%; height: 260px; border-radius: 5px; background-color: gray;"></div>
+        <div style="padding: 8px;" >     
+            <div id="map" style="width: 95%; height: 260px; border-radius: 5px; background-color: gray;">
         </div>
         <div style="background-color: rgb(55, 101, 170); color:rgb(255, 255, 255); border-radius: 5px; width: 95%; font-size: 30px; font-weight: bold; position: relative; bottom:5px;">
             <p id="locating">locating...</p>
@@ -46,6 +51,19 @@
             <td id="police">--</td>
             </tr>
         </table>
+        <div style="position: relative; border: 10px black;">
+            <table style="height: 85px; width: 95%;">
+                <td>
+                    <img src="aed.svg" width="20%" style="float: left;">
+                    <center>
+                    <p id="aed_distance">--</p>
+                    </center>
+                    <p id="name">--</p>
+                    <p id="location">--</p>
+                </td>
+            </table>
+        </div>
+        
 
     <div style="color: white; background-color: red; width: 50%; position: relative; left: 10px; border-radius: 5px;">
         <h1 style="position: relative; left: 5px;">First Aid</h1>
